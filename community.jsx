@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Navbar, Footer } from "../../App";
+import { Navbar, Footer } from "./App";
 import "./community.css";
 
 const CommunityForum = () => {
