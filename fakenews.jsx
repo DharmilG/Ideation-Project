@@ -1,5 +1,5 @@
 import "./blog.css";
-import { Navbar, Footer } from "../../../App";
+import { Navbar, Footer } from "./App";
 
 const BlogPost = () => {
   const sections = [
