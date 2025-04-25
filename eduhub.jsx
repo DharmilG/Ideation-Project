@@ -1,5 +1,5 @@
 import "./eduhub.css";
-import { Navbar, Footer } from "../../App";
+import { Navbar, Footer } from "./App";
 
 const Header = () => {
   return (
