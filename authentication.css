@@ -1,0 +1,203 @@
+.auth-page-container {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  
+  .auth-page-form-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    max-width: 28rem;
+  }
+  
+  .auth-page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .auth-page-description {
+    color: #6b7280;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .auth-page-form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .auth-page-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-page-label {
+    font-size: 18px;
+    font-weight: 700;
+    color: #374151;
+  }
+  
+  .auth-page-input {
+    margin-top: 0.25rem;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  }
+
+  .auth-page-input:focus{
+    transform:scaleY(2px);
+  }
+  
+  .auth-page-password-input {
+    position: relative;
+  }
+  
+  .auth-page-password-toggle {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: #6b7280;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .auth-page-submit-button {
+    width: 100%;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, 0.2s ease-in-out;
+  }
+  
+  .auth-page-submit-button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  .auth-page-toggle-text {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .auth-page-toggle-link {
+    color: #2563eb;
+    text-decoration: none;
+    margin-left: 0.25rem;
+    transition: 0.2s ease-in;
+  }
+  
+  .auth-page-toggle-link:hover {
+    text-decoration: none;
+
+    border-radius: 30%;
+  }
+
+  .auth-page-google-login {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .auth-page-google-login button {
+    background-color: #4285f4; /* Google blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-page-google-login button:hover {
+    background-color: #357ae8; /* Darker blue on hover */
+  }
+
+  .auth-page-toggle-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-right: 18px; /* Add some right margin to create space */
+  }
+
+  .auth-page-toggle-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-right: 18px; /* Add some right margin to create space */
+  }
+  
+  .auth-page-toggle-link {
+    background-color: #4285f4; /* Google blue */
+    color: white;
+    padding: 12px 28px; /* Slightly more padding */
+    border: 2px solid #4285f4; /* Add a border in the same color */
+    border-radius: 25px; /* More rounded corners for a pill shape */
+    cursor: pointer;
+    font-weight: 600; /* Slightly bolder font */
+    font-size: 1rem; /* Adjust font size if needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    position: relative; /* For pseudo-element animation */
+    overflow: hidden; /* Clip the pseudo-element */
+    z-index: 1; /* Ensure text is above pseudo-element */
+    transition: color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                border-radius 0.3s ease-in-out; /* Smooth border-radius transition */
+  }
+  
+  .auth-page-toggle-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #357ae8; /* Darker blue */
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smoother transition */
+    z-index: -1; /* Place behind the text */
+  }
+  
+  .auth-page-toggle-link:hover {
+    color: white; /* Keep text white on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+    border-radius: 8px; /* Change to a less rounded shape on hover */
+  }
+  
+  .auth-page-toggle-link:hover::before {
+    opacity: 1; /* Fade in the darker blue background on hover */
+  }
+  
+  /* Optional: Add a more refined "pulse" animation */
+  @keyframes pulse-blue-smooth {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.08);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+  }
+  
+  .auth-page-toggle-link.animate-pulse {
+    animation: pulse-blue-smooth 1.5s infinite alternate;
+  }

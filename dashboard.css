@@ -1,0 +1,77 @@
+.dashboard-container {
+    min-height: 100vh;
+    background-color: #f4f7f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-header p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .dashboard-reports-overview {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+  }
+  
+  .dashboard-reports-overview h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-report-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-refresh-button {
+    text-align: center;
+  }
+  
+  .dashboard-refresh-button button {
+    margin-top: 15px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Add transition to ALL properties */
+  }
+  
+  .dashboard-refresh-button button:hover {
+    margin-top: 18px;
+    background-color: #2980b9;
+    border-radius: 15px;
+    transform: scale(1.05);  /* Add a slight scale on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add a subtle shadow */
+  }
+
+.dashboard-refresh-button button:active {
+    transform: scale(1); /* Return to original size on active */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Smaller shadow on active */
+}
