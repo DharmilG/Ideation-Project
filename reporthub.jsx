@@ -1,6 +1,6 @@
 import React from 'react';
 import './reporthub.css';
-import { Navbar, Footer } from '../../App';
+import { Navbar, Footer } from './App';
 function ReportHub() {
   return (
     <>
